@@ -8,16 +8,28 @@ int main() {
     std::cin >> name;
     int a = name.length();
     
-    for (int i=0; i<a+14; i++)
-        eil1 += "*";
-    
-    eil2 = "*";
-    for (int i=0; i<a+12; i++)
-        eil2+=" ";
-    eil2 += "*";
-    
-    eil3 = "* Sveikas, "+ name + "! *";
-    
+    if (name[a-1]=='a'){
+        for (int i=0; i<a+13; i++)
+            eil1 += "*";
+        
+        eil2 = "*";
+        for (int i=0; i<a+11; i++)
+            eil2+=" ";
+        eil2 += "*";
+
+        eil3 = "* Sveika, "+ name + "! *";
+    }
+    else {
+        for (int i=0; i<a+14; i++)
+            eil1 += "*";
+
+        eil2 = "*";
+        for (int i=0; i<a+12; i++)
+            eil2+=" ";
+        eil2 += "*";
+
+        eil3 = "* Sveikas, "+ name + "! *";
+    }
     std::cout << eil1 << std::endl;
     std::cout << eil2 << std::endl;
     std::cout << eil3 << std::endl;
