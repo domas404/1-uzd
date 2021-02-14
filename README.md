@@ -9,7 +9,7 @@ Ankstesnės programos versijos:
     v0.2 - pridėta funkcija, parenkanti tinkamą pasisveikinimo giminę pagal vartotojo vardą.
     v1.0 - pridėta funkcija, leidžianti pasirinkti norimą rėmelio plotį.
 
-Instrukcija:
+
 
 Diegimas ir paleidimas:
 
