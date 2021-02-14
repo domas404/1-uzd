@@ -1,38 +1,43 @@
 #include <iostream>
 #include <string>
 
+void loop(std::string t, int a) {
+    for (int i=0; i<a; i++)
+        std::cout << t;
+}
+
+void print(std::string greet, std::string name, int a, int width) {
+    loop ("*", a);
+    std::cout << std::endl;
+    for (int i=0; i<(width-3)/2; i++){
+        std::cout << "*";
+        loop (" ", a-2);
+        std::cout << "*" << std::endl;
+    }
+    std::cout << greet << name << "! *" << std::endl;
+    for (int i=0; i<(width-3)/2; i++){
+        std::cout << "*";
+        loop (" ", a-2);
+        std::cout << "*" << std::endl;
+    }
+    loop ("*", a);
+    std::cout << std::endl;
+}
+
 int main() {
-    std::string eil1, eil2, eil3;
     std::string name;
     std::cout << "Iveskite savo varda: ";
     std::cin >> name;
+    int width;
     int a = name.length();
-    
-    if (name[a-1]=='a'){
-        for (int i=0; i<a+13; i++)
-            eil1 += "*";
-        
-        eil2 = "*";
-        for (int i=0; i<a+11; i++)
-            eil2+=" ";
-        eil2 += "*";
 
-        eil3 = "* Sveika, "+ name + "! *";
+    std::cout << "Nurodykite remelio ploti: ";
+    std::cin >> width;
+    
+    if (name[a-1]=='a' || name[a-1]=='e'){
+        print ("* Sveika, ", name, a+13, width);
     }
     else {
-        for (int i=0; i<a+14; i++)
-            eil1 += "*";
-
-        eil2 = "*";
-        for (int i=0; i<a+12; i++)
-            eil2+=" ";
-        eil2 += "*";
-
-        eil3 = "* Sveikas, "+ name + "! *";
+        print ("* Sveikas, ", name, a+14, width);
     }
-    std::cout << eil1 << std::endl;
-    std::cout << eil2 << std::endl;
-    std::cout << eil3 << std::endl;
-    std::cout << eil2 << std::endl;
-    std::cout << eil1 << std::endl;
 }
