@@ -18,7 +18,7 @@ Diegimas ir paleidimas:
 
         cd /.../'folder_name'
 
-   Įveskite šias komandas:
+   Į komandinę eilutę įveskite šias komandas:
 
         g++ main.cpp -o main
         ./main
