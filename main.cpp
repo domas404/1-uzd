@@ -7,15 +7,15 @@ int main() {
     std::cout << "Iveskite savo varda: ";
     std::cin >> name;
     int a = name.length();
-    // 1 ir 5 eilutes
+    
     for (int i=0; i<a+14; i++)
         eil1 += "*";
-    // 2 ir 4 eilutes
+    
     eil2 = "*";
     for (int i=0; i<a+12; i++)
         eil2+=" ";
     eil2 += "*";
-    // 3 eilute
+    
     eil3 = "* Sveikas, "+ name + "! *";
     
     std::cout << eil1 << std::endl;
