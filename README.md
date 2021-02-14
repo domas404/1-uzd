@@ -13,17 +13,17 @@ Instrukcija:
 
 Diegimas ir paleidimas:
 
-    Atsisiųskite ir išarchyvuokite release'o zip failą.
-    Atverkite komandinę eilutę (cmd) ir nurodykite 'main.cpp' failo adresą kompiuteryje.
+   Atsisiųskite ir išarchyvuokite release'o zip failą.
+   Atverkite komandinę eilutę (cmd) ir nurodykite 'main.cpp' failo adresą kompiuteryje.
 
         cd /.../'folder_name'
 
-    Įveskite šias komandas:
+   Įveskite šias komandas:
 
         g++ main.cpp -o main
         ./main
   
 Naudojimasis:
 
-    Įveskite savo vardą.
-    Įveskite norimą rėmelio plotį (eilučių skaičių).
+   Įveskite savo vardą.
+   Įveskite norimą rėmelio plotį (eilučių skaičių).
