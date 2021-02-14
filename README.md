@@ -1,3 +1,2 @@
 # 1-uzd
-Įrėmintas pasisveikinimas
-Antroji versija
+Įrėmintas pasisveikinimas, antroji versija
